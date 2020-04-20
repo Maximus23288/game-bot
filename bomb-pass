@@ -8,6 +8,10 @@ int lbomb[N];
 int xghost[N];
 int yghost[N];
 int lghost[N];
+int xplayer[N];
+int yplayer[N];
+int lplayer[N];
+
 
 l = sqrt(size(map));
 for (i=0;i<l;i++){
@@ -50,7 +54,19 @@ for (i=0;i<l;i++){
          k2++;
       }
      }
+        if ((A[i][j]=="♥") || (A[i][j])=="♠"))
+   {
+     n = sqrt((x-j)*(x-j)+(y-i)*(y-i));
+      if(n<5)
+      {
+         xplayer[k3]=j;
+         yplayer[k3]=i;
+         lplayer[k3]=n;
+         k3++;
+      }
+     }
    }
+   
     
     
   }
