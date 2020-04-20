@@ -1,5 +1,5 @@
 string: map;
-int: l, i, j, x, y, k1, k2, k3, k4, k5, k6, max;
+int: l, i, j, x, y, kbomb, kghost, kplayer, k4, k5, k6, max;
 const int N;
 string A[N][N];
 int xbomb[N];
@@ -37,9 +37,9 @@ for (i=0;i<l;i++){
      n = sqrt((x-j)*(x-j)+(y-i)*(y-i));
       if(n<5)
       {
-         xbomb[k1]=j;
-         ybomb[k1]=i;
-         lbomb[k1]=n;
+         xbomb[kbomb]=j;
+         ybomb[kbomb]=i;
+         lbomb[kbomb]=n;
          k1++;
       }
      }
@@ -48,9 +48,9 @@ for (i=0;i<l;i++){
      n = sqrt((x-j)*(x-j)+(y-i)*(y-i));
       if(n<5)
       {
-         xghost[k2]=j;
-         yghost[k2]=i;
-         lghost[k2]=n;
+         xghost[kghost]=j;
+         yghost[kghost]=i;
+         lghost[kghost]=n;
          k2++;
       }
      }
@@ -59,9 +59,9 @@ for (i=0;i<l;i++){
      n = sqrt((x-j)*(x-j)+(y-i)*(y-i));
       if(n<5)
       {
-         xplayer[k3]=j;
-         yplayer[k3]=i;
-         lplayer[k3]=n;
+         xplayer[kplayer]=j;
+         yplayer[kplayer]=i;
+         lplayer[kplayer]=n;
          k3++;
       }
      }
@@ -69,11 +69,12 @@ for (i=0;i<l;i++){
    
     
     
-for (k=0;k<N;k++){
+for (i=0;i<N;i++){
   if (l<max){
     min = l;
+    kbomb = i;
   }
-}   
+}
     
     
     
