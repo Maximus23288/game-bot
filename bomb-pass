@@ -1,3 +1,4 @@
 string: map;
 int: l, lb, lg, lp, lw, lwb;
 l = sqrt(size(map));
+for (i=0;i<l
