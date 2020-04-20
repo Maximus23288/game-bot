@@ -40,7 +40,7 @@ for (i=0;i<l;i++){
          xbomb[kbomb]=j;
          ybomb[kbomb]=i;
          lbomb[kbomb]=n;
-         k1++;
+         kbomb++;
       }
      }
        if (A[i][j]=="&")
@@ -51,7 +51,7 @@ for (i=0;i<l;i++){
          xghost[kghost]=j;
          yghost[kghost]=i;
          lghost[kghost]=n;
-         k2++;
+         kghost++;
       }
      }
         if ((A[i][j]=="♥") || (A[i][j])=="♠"))
@@ -62,7 +62,7 @@ for (i=0;i<l;i++){
          xplayer[kplayer]=j;
          yplayer[kplayer]=i;
          lplayer[kplayer]=n;
-         k3++;
+         kplayer++;
       }
      }
    }
