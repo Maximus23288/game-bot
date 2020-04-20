@@ -1,2 +1,3 @@
-string: map
-int: l, lb, lg, lp, lw, lwb
+string: map;
+int: l, lb, lg, lp, lw, lwb;
+l = sqrt(size(map));
