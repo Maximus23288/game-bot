@@ -1,5 +1,5 @@
 string: map;
-int: l, i, j, x, y, k1, k2, k3, k4, k5, k6;
+int: l, i, j, x, y, k1, k2, k3, k4, k5, k6, max;
 const int N;
 string A[N][N];
 int xbomb[N];
@@ -11,7 +11,7 @@ int lghost[N];
 int xplayer[N];
 int yplayer[N];
 int lplayer[N];
-
+min = 10000;
 
 l = sqrt(size(map));
 for (i=0;i<l;i++){
@@ -69,6 +69,14 @@ for (i=0;i<l;i++){
    
     
     
+for (k=0;k<N;k++){
+  if (l<max){
+    min = l;
+  }
+}   
+    
+    
+    
     if ((x>=x1)&&((abs(x-x1))<(abs(y-y1))) right;
     if ((x>=x1)&&((abs(x-x1))>(abs(y-y1)))
     {
@@ -81,24 +89,6 @@ for (i=0;i<l;i++){
     if (y>=y1)  down (maxim);
     if (y<=y1)  up ;  
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
