@@ -1,5 +1,5 @@
 string: map;
-int: l, lb, lg, lp, lw, lwb;
+int: l, i, j, x, y;
 const int N;
 string A[N][N];
 l = sqrt(size(map));
