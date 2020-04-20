@@ -1,6 +1,10 @@
 string: map;
 int: l, lb, lg, lp, lw, lwb;
-const int A[N];
-const int B[N];
+const int N;
+string A[N][N];
 l = sqrt(size(map));
-for (i=0;i<l;i++)
+for (i=0;i<l;i++){
+  for (j=0;j<l;j++){
+    A[i][j] = map[i*l+j];
+  }
+}
