@@ -69,5 +69,38 @@ for (i=0;i<l;i++){
    
     
     
+    if ((x>=x1)&&((abs(x-x1))<(abs(y-y1))) right;
+    if ((x>=x1)&&((abs(x-x1))>(abs(y-y1)))
+    {
+    if (y>=y1)  down (maxim);
+    if (y<=y1)  up ;  
+    }
+    if ((x<=x1)&&((abs(x-x1))<(abs(y-y1))) left;
+    if ((x<=x1)&&((abs(x-x1))>(abs(y-y1)))
+    {
+    if (y>=y1)  down (maxim);
+    if (y<=y1)  up ;  
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   }
 }
