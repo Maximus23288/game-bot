@@ -22,12 +22,27 @@ for (i=0;i<l;i++){
 for (i=0;i<l;i++){
   for (j=0;j<l;j++){
     if ((A[i][j]=="5") || (A[i][j]=="4") || (A[i][j]=="3") || (A[i][j]=="2") || (A[i][j]=="1"))
-      l1 = sqrt((x-j)*(x-j)+(y-i)*(y-i));
-      if(l1<5)
+   {
+     n = sqrt((x-j)*(x-j)+(y-i)*(y-i));
+      if(n<5)
       {
-         x1=j;
-         y1=i;
+         xbomb=j;
+         ybomb=i;
+         lbomb=n;
       }
-    }
+     }
+       if (A[i][j]=="&")
+   {
+     n = sqrt((x-j)*(x-j)+(y-i)*(y-i));
+      if(n<5)
+      {
+         xghost=j;
+         yghost=i;
+         lghost=n;
+      }
+     }
+   }
+    
+    
   }
 }
