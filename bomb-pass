@@ -1,5 +1,5 @@
 string: map;
-int: l, i, j, x, y;
+int: l, i, j, x, y, k1, k2, k3, k4, k5, k6;
 const int N;
 string A[N][N];
 int xbomb[N];
