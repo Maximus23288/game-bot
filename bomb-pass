@@ -78,8 +78,8 @@ for (i=0;i<N;i++){
     
     
     
-    if ((x>=x1)&&((abs(x-x1))<(abs(y-y1))) right;
-    if ((x>=x1)&&((abs(x-x1))>(abs(y-y1)))
+    if ((x>=x1)&&((abs(x-x1))<(abs(y-y1))) right; 
+    if ((x>=x1)&&((abs(x-x1))>(abs(y-y1)))        
     {
     if (y>=y1)  down (maxim);
     if (y<=y1)  up ;  
@@ -90,9 +90,10 @@ for (i=0;i<N;i++){
     if (y>=y1)  down (maxim);
     if (y<=y1)  up ;  
     }
-    
-    if(right && (sqrt((x2-j+1)*(x2-j+1)+(y2-i)*(y2-i)))<l2)
-      if (l2 уменьшилось больше чем l2 увеличилось)
-    
+      
+    for(m=0;m<3;m++)
+      { if((lmomb[0]-sqrt(sqr(xbomb[o]-xn))+lbomb[1]-sqrt(sqr(xbomb[1]-xn)))< top )
+           { top=lmomb[0]-sqrt(sqr(xbomb[o]-xn))+lbomb[1]-sqrt(sqr(xbomb[1]-xn))
+              topm=m;   
   }
 }
