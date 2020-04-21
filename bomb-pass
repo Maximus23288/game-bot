@@ -12,7 +12,8 @@ int xplayer[N];
 int yplayer[N];
 int lplayer[N];
 min = 10000;
-
+int xm[3] { x+1, x-1, x, x };
+int ym[3] { y, y, y+1, y-1 };
 l = sqrt(size(map));
 for (i=0;i<l;i++){
   for (j=0;j<l;j++){
@@ -92,8 +93,14 @@ for (i=0;i<N;i++){
     }
       
     for(m=0;m<3;m++)
-      { if((lmomb[0]-sqrt(sqr(xbomb[o]-xn))+lbomb[1]-sqrt(sqr(xbomb[1]-xn)))< top )
-           { top=lmomb[0]-sqrt(sqr(xbomb[o]-xn))+lbomb[1]-sqrt(sqr(xbomb[1]-xn))
+      { if(lbomb[0]-sqrt(sqr(xbomb[0]-xm[m])+sqr(ybomb[0]-ym[m]))+lbomb[1]-sqrt(sqr(xbomb[1]-xm[m])+sqr(ybomb[1]-ym[m]))< top )
+           { top=lbomb[0]-sqrt(sqr(xbomb[0]-xm[m])+sqr(ybomb[0]-ym[m]))+lbomb[1]-sqrt(sqr(xbomb[1]-xm[m])+sqr(ybomb[1]-ym[m]))
               topm=m;   
+              
+          if (topm = 0) right
+          if (topm = 1) left
+          if (topm = 2) down
+          if (topm = 3) up
+              
   }
 }
