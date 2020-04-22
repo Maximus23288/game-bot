@@ -68,7 +68,51 @@ for (i=0;i<l;i++){
      }
    }
    
-    
+
+/----------------------------------------------------/
+
+pos1 = 0;
+pos2 = 0;
+pos3 = 0;
+pos4 = 0;
+for (i=0;i<N;i++){
+  if (x<x[i]) && (y>y[i])
+    bomb in 1 quarter
+    pos1++;
+  if (x>x[i]) && (y>y[i])
+    bomb in 2 quarter
+    pos2++;
+  if (x>x[i]) && (y<y[i])
+    bomb in 3 quarter
+    pos3++;
+  if (x<x[i]) && (y<y[i])
+    bomb in 4 quarter
+    pos4++;
+}
+if ((pos1>pos2) && (pos1>pos3) && (pos1>pos4))
+  if (pos2>=pos4)
+    right
+  if (pos2<pos4)
+    up
+if ((pos2>pos1) && (pos2>pos3) && (pos2>pos4))
+  if (pos1>=pos3)
+    left
+  if (pos1<pos3)
+    up
+if ((pos3>pos1) && (pos3>pos2) && (pos3>pos4))
+  if (pos2>=pos4)
+    down
+  if (pos2<pos4)
+    left
+if ((pos4>pos1) && (pos4>pos2) && (pos4>pos3))
+  if (pos1>=pos3)
+    down
+  if (pos1<pos3)
+    right
+
+\------------------------------------------------------\
+
+
     
 for (i=0;i<N;i++){
   if (l<max){
