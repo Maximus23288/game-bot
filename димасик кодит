@@ -16,16 +16,53 @@ if((yclosestbomb==y)&&(abs(xclosestbomb-x)<4))
                   if((case 1)&&((y+1)!='#'): gcb->Down(); done = true; break;
                   }
         }
+        else
+        {
+          if((xlosestbomb<x)&&((x+1)!='#'))
+          {
+          gcb->Right(); done = true; break;
+          }
+          else
+           gcb->Left(); done = true; break;
+           if((xlosestbomb>x)&&((x-1)!='#'))
+          {
+          gcb->Left(); done = true; break;
+          }
+          else
+           gcb->Right(); done = true; break;
+         }  
 }
-else 
+ 
 if((xclosestbomb==x)&&(abs(yclosestbomb-y)<4))
-switch (rand() % 2) {
-if((case 0)&&((x+1)!='#'): gcb->Right(); done = true; break;
-else 
-{if((case 0)&&((x-1)!='#'): gcb->Left(); done = true; break;
-}
-if((case 1)&&((x-1)!='#'): gcb->Right(); done = true; break;
-else 
-{if((case 1)&&((y+1)!='#'): gcb->Left(); done = true; break;
-}
+{
+   if
+    { 
+    switch (rand() % 2)
+                        {
+                         if((case 0)&&((x+1)!='#'): gcb->Right(); done = true; break;
+                         else 
+                             {
+                             if((case 0)&&((x-1)!='#'): gcb->Left(); done = true; break;
+                             }
+                        if((case 1)&&((x-1)!='#'): gcb->Right(); done = true; break;
+                        else 
+                           {
+                           if((case 1)&&((y+1)!='#'): gcb->Left(); done = true; break;
+                           }
+      }
+       else
+        {
+          if((ylosestbomb<y)&&((y+1)!='#'))
+          {
+          gcb->Down(); done = true; break;
+          }
+          else
+           gcb->Up(); done = true; break;
+           if((ylosestbomb>y)&&((y-1)!='#'))
+          {
+          gcb->Up(); done = true; break;
+          }
+          else
+           gcb->Down(); done = true; break;
+         }  
 }
