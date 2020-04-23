@@ -1,0 +1,5 @@
+
+if((yclosestbomb==y)&&(abs(xclosestbomb-x)<4)||не мешают стены)
+ up/down
+if((xclosestbomb==x)&&(abs(yclosestbomb-y)<4)||не мешают стены)
+right/left
